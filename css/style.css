@@ -232,6 +232,53 @@ img { max-width: 100%; display: block; }
 .section { padding-block: 4rem; }
 .section-muted { background: var(--bg-alt); }
 
+.hero, #about, #menu, #visit {
+  position: relative;
+}
+
+#about {
+  background:
+    linear-gradient(180deg, rgba(10,8,8,0.55) 0%, rgba(20,16,16,0.78) 100%),
+    url("../assets/restaurant-interior.jpg") center/cover no-repeat;
+  color: #fff;
+}
+#about .section-lead,
+#about .about-card p { color: rgba(255,255,255,0.92); }
+#about h2,
+#about .about-card h3 { color: #fff; }
+
+#menu {
+  background:
+    linear-gradient(180deg, rgba(10,8,8,0.45) 0%, rgba(20,18,18,0.72) 100%),
+    url("../assets/steak-plate.jpg") center/cover no-repeat;
+  color: #fff;
+}
+#menu .section-lead { color: rgba(255,255,255,0.92); }
+#menu h2 { color: #fff; }
+#menu .menu-group {
+  background: rgba(255,255,255,0.95);
+  color: var(--text);
+}
+#menu .menu-group h3 { color: var(--accent-bg); }
+#menu .menu-item { color: #1f1f1f; }
+#menu .menu-price { color: var(--text-muted); }
+#menu .menu-note { color: var(--text-muted); }
+
+#visit {
+  background:
+    linear-gradient(180deg, rgba(10,8,8,0.55) 0%, rgba(20,18,18,0.8) 100%),
+    url("../assets/steakhouse-interior-2.jpg") center/cover no-repeat;
+  color: #fff;
+}
+#visit .section-lead { color: rgba(255,255,255,0.92); }
+#visit h2 { color: #fff; }
+#visit .visit-card {
+  background: rgba(255,255,255,0.95);
+  color: var(--text);
+}
+#visit .visit-card h3 { color: var(--accent-bg); }
+#visit .visit-card p { color: var(--text-muted); }
+
 .section > .container > h2 {
   font-size: clamp(1.5rem, 2vw + 0.6rem, 2rem);
   margin: 0;
