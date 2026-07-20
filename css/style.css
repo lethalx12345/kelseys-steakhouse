@@ -160,11 +160,18 @@ img { max-width: 100%; display: block; }
 
 .hero {
   position: relative;
-  padding-block: 5.25rem 4.25rem;
+  min-height: 100vh;
+  padding-block: 5rem;
   background:
-    linear-gradient(180deg, rgb(20 10 10 / 0.25) 0%, rgb(10 5 5 / 0.65) 100%),
-    url("../assets/steak-hero.jpg") center/cover no-repeat;
+    linear-gradient(180deg, rgb(25 15 15 / 0.35) 0%, rgb(15 8 8 / 0.75) 100%),
+    url("../assets/hero-main.jpg") center/cover no-repeat;
   color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 60ch;
 }
 
 .hero-badge {
@@ -207,29 +214,6 @@ img { max-width: 100%; display: block; }
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 1.75rem;
-}
-
-.hero-content {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-
-.hero-text {
-  max-width: 60ch;
-}
-
-.hero-image {
-  width: 100%;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .trust-item {
@@ -290,7 +274,7 @@ img { max-width: 100%; display: block; }
 #visit {
   background:
     linear-gradient(180deg, rgba(10,8,8,0.55) 0%, rgba(20,18,18,0.8) 100%),
-    url("../assets/steakhouse-interior-2.jpg") center/cover no-repeat;
+    url("../assets/restaurant-interior-2.jpg") center/cover no-repeat;
   color: #fff;
 }
 #visit .section-lead { color: rgba(255,255,255,0.92); }
@@ -542,7 +526,7 @@ img { max-width: 100%; display: block; }
   .gallery { grid-template-columns: repeat(3, 1fr); }
   .gallery-item img { height: 260px; }
   .visit-grid { grid-template-columns: repeat(3, 1fr); }
-  .contact-grid { grid-template-columnles: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; }
 }
 
