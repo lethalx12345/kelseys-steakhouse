@@ -209,6 +209,29 @@ img { max-width: 100%; display: block; }
   margin-top: 1.75rem;
 }
 
+.hero-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 60ch;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
 .trust-item {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
